@@ -1,0 +1,35 @@
+// Splash styles - add this to your existing main.scss
+.splash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.splash-overlay.hidden {
+  display: none;
+}
+
+#splash-container {
+  width: 100%;
+  height: 100%;
+}
+
+.splash-overlay {
+  transition: opacity 1s ease-out; /* Smooth fade transition */
+  touch-action: manipulation; /* Improves touch responsiveness */
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS */
+
+  &.fade-out {
+    opacity: 0;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

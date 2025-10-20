@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <title>Mandy</title>
+  <link rel="stylesheet" href="/src/scss/main.css">
+  <link rel="stylesheet" href="/src/scss/splash.scss">
+</head>
+<body>
+<!-- Simple Splash Overlay -->
+<div class="splash-overlay" id="splashOverlay">
+  <div id="splash-container"></div>
+</div>
+
+<div id="app"></div>
+
+<div id="experience" class="tarot">
+  <canvas id="experience-canvas" class="experience-canvas"></canvas>
+</div>
+
+<section id="section-cylinder" class="content-section">
+  <button class="section-close" onclick="closeSection()">×</button>
+
+  <div class="section-content">
+    <h1>Shows</h1>
+    <ul id="upcoming-shows">Loading shows…</ul>
+  </div>
+
+  <div class="section-content">
+    <h1>Archives</h1>
+    <ul id="archived-shows">Loading shows…</ul>
+  </div>
+</section>
+
+<section id="section-mirror" class="content-section">
+  <button class="section-close" onclick="closeSection()">×</button>
+  <div class="section-content">
+    <h1>Mirror Section</h1>
+    <p>Add your content for the Mirror object here.</p>
+  </div>
+</section>
+
+<section id="section-circle" class="content-section">
+  <button class="section-close" onclick="closeSection()">×</button>
+  <div class="section-content">
+    <h1>Circle Section</h1>
+    <p>Add your content for the Circle object here.</p>
+  </div>
+</section>
+
+<section id="section-star" class="content-section">
+  <button class="section-close" onclick="closeSection()">×</button>
+  <div class="section-content">
+    <h1>Star Section</h1>
+    <p>Add your content for the Star object here.</p>
+  </div>
+</section>
+
+<section id="section-curve" class="content-section">
+  <button class="section-close" onclick="closeSection()">×</button>
+  <div class="section-content">
+    <!-- Mobile Button -->
+    <button id="nina-protocol-btn" class="mobile-embed-btn">
+      Open Nina Protocol
+    </button>
+    <!-- Desktop Embed -->
+    <div class="desktop-embed">
+      <iframe src="https://www.ninaprotocol.com/hubs/itsmandy" title="Nina Protocol"></iframe>
+    </div>
+  </div>
+</section>
+
+
+<section id="section-lipstick" class="content-section">
+  <button class="section-close" onclick="closeSection()">×</button>
+  <div class="section-content">
+    <h1>Lipstick Section</h1>
+    <p>Add your content for the Lipstick object here.</p>
+  </div>
+</section>
+
+<!-- Artist Signature WebP -->
+<div class="artist-signature">
+  <img src="public/fonts/its_mandy_font.webp" alt="Artist Signature" class="signature-webp">
+</div>
+<!-- Magic 8-Ball placeholder -->
+<div id="magic8ball-container"></div>
+
+<script type="module" src="/src/main.js"></script>
+<script type="module" src="/src/splash.js"></script>
+</body>
+</html>
