@@ -563,12 +563,14 @@ function loadMagic8Ball() {
 
 // === Load Model ===
 const dracoLoader = new DRACOLoader();
-dracoLoader.setDecoderPath('/draco/');
+// FIXED: Use BASE_URL for GitHub Pages
+dracoLoader.setDecoderPath(`${import.meta.env.BASE_URL}draco/`);
 
 const gltfLoader = new GLTFLoader();
 gltfLoader.setDRACOLoader(dracoLoader);
 
-gltfLoader.load('/models/mandystar.glb', (glb) => {
+// FIXED: Use BASE_URL for GitHub Pages
+gltfLoader.load(`${import.meta.env.BASE_URL}models/mandystar.glb`, (glb) => {
   const model = glb.scene;
 
   // DEBUG: Log all object names in the model
@@ -585,6 +587,8 @@ gltfLoader.load('/models/mandystar.glb', (glb) => {
   fitCameraToObject(model);
   model.position.x -= 0.15;
   loadMagic8Ball();
+}, undefined, (error) => {
+  console.error('Error loading model:', error);
 });
 
 // === Resize ===
