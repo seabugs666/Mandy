@@ -100,11 +100,30 @@ function initMobileNinaButton() {
   // Initialize layout
   updateNinaSectionLayout();
 
-  // Button click handler
-  ninaButton.addEventListener('click', function(e) {
-    e.stopPropagation();
-    window.open(embedUrl, '_blank');
-  });
+  // Only add event listeners if on mobile
+  if (isMobileDevice()) {
+    // Touch handler for mobile (prevents 300ms delay)
+    ninaButton.addEventListener('touchend', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('Nina button touched - opening URL');
+      window.open(embedUrl, '_blank');
+    });
+
+    // Prevent touch scroll
+    ninaButton.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      console.log('Nina button touch started');
+    });
+
+    // Fallback click handler for mobile browsers
+    ninaButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('Nina button clicked - opening URL');
+      window.open(embedUrl, '_blank');
+    });
+  }
 
   // Handle window resize
   window.addEventListener('resize', updateNinaSectionLayout);
