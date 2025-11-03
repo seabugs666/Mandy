@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/Mandy/', // Add this line - replace with your actual repo name
   css: {
     preprocessorOptions: {
       scss: {
