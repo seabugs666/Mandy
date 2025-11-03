@@ -46,7 +46,7 @@ export function initSplash() {
 
   // Load your GLB model
   const loader = new GLTFLoader();
-    loader.load(`${import.meta.env.BASE_URL}models/shade.glb`,,
+    loader.load(`${import.meta.env.BASE_URL}models/shade.glb`,
     (gltf) => {
       const model = gltf.scene;
       splashScene.add(model);
