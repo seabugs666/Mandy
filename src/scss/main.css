@@ -93,8 +93,8 @@ body.splash-complete .artist-signature {
     width: 100%;
     height: 100vh;
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.95);
-    color: white;
+    background: #fff;
+    color: #000;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease;
@@ -118,7 +118,7 @@ body.splash-complete .artist-signature {
     right: 20px;
     background: none;
     border: none;
-    color: white;
+    color: #000;
     font-size: 3rem;
     width: 60px;
     height: 60px;
@@ -152,21 +152,21 @@ body.splash-complete .artist-signature {
 .content-section .section-content h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #fff;
+    color: #000;
 }
 
 .content-section .section-content h2 {
     font-size: 1.8rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #000;
 }
 
 .content-section .section-content p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .content-section .section-content ul,
