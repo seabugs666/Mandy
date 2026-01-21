@@ -227,8 +227,8 @@ body.splash-complete .artist-signature {
 }
 
 #section-mirror {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
+   background: #fff;
+    color: #000;
 }
 
 #section-mirror .section-close {
