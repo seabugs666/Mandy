@@ -107,6 +107,10 @@ body.splash-complete .artist-signature {
     user-select: none;
 }
 
+#section-curve.content-section {
+    padding: 0;
+}
+
 .content-section.active {
     opacity: 1;
     pointer-events: auto;
@@ -323,7 +327,8 @@ body.splash-complete .artist-signature {
     overscroll-behavior: none;
     -webkit-overscroll-behavior: none;
     touch-action: manipulation;
-    padding: 0;
+    padding: 0 !important;
+    margin: 0;
 }
 
 #section-curve .section-close {
@@ -335,17 +340,23 @@ body.splash-complete .artist-signature {
     padding: 0;
     margin: 0;
     max-width: none;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: stretch;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #section-curve iframe {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     border: none;
     border-radius: 0;
     overflow: hidden;
@@ -353,6 +364,10 @@ body.splash-complete .artist-signature {
     -webkit-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #section-lipstick {
