@@ -806,3 +806,18 @@ body.section-active {
         height: 100vh;
     }
 }
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Tablet: 2 columns (optional middle breakpoint) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
