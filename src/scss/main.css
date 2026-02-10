@@ -241,16 +241,54 @@ body.splash-complete .artist-signature {
 
 #section-mirror .section-content h1 {
     color: #000;
-    font-size: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
 }
 
 #section-mirror .section-content h2 {
     color: #000;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #section-mirror .section-content p {
     font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
     color: rgba(0, 0, 0, 0.9);
+}
+
+#section-mirror .section-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#section-mirror .section-content ul li {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+    list-style: none;
+}
+
+#section-mirror .section-content ul li:hover {
+    color: #333;
+}
+
+#section-mirror .section-content ol li {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    line-height: 1.4;
 }
 
 #section-circle {
