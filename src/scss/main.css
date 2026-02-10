@@ -323,6 +323,7 @@ body.splash-complete .artist-signature {
     overscroll-behavior: none;
     -webkit-overscroll-behavior: none;
     touch-action: manipulation;
+    padding: 0;
 }
 
 #section-curve .section-close {
@@ -331,21 +332,22 @@ body.splash-complete .artist-signature {
 }
 
 #section-curve .section-content {
-    padding-top: 80px;
-    height: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     overflow: hidden;
 }
 
 #section-curve iframe {
-   width: 100vw;
-    height: 75vh;
+    width: 100vw;
+    height: 100vh;
     border: none;
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
     touch-action: manipulation;
     -webkit-user-select: none;
@@ -539,11 +541,11 @@ body.section-active {
     }
 
     #section-curve .section-content {
-        padding-top: 70px;
+        padding: 0;
     }
 
     #section-curve iframe {
-        height: 70vh;
+        height: 100vh;
     }
 }
 
@@ -586,18 +588,18 @@ body.section-active {
     }
 
     #section-curve {
-        padding: 1rem;
+        padding: 0;
         touch-action: manipulation;
     }
 
     #section-curve .section-content {
-        padding-top: 60px;
-        height: 100%;
+        padding: 0;
+        height: 100vh;
         overflow: hidden;
     }
 
     #section-curve iframe {
-        height: 60vh;
+        height: 100vh;
         touch-action: manipulation;
     }
 
@@ -624,12 +626,12 @@ body.section-active {
 
 @media (max-width: 480px) {
     #section-curve {
-        padding: 0.5rem;
+        padding: 0;
     }
 
     #section-curve .section-content {
-        padding-top: 50px;
-        height: 100%;
+        padding: 0;
+        height: 100vh;
         overflow: hidden;
     }
 
@@ -642,6 +644,6 @@ body.section-active {
     }
 
     #section-curve iframe {
-        height: 55vh;
+        height: 100vh;
     }
 }
