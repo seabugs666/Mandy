@@ -654,7 +654,21 @@ body.splash-complete .artist-signature {
     transform: translateY(-50%) scale(1.1);
     background: rgba(44, 46, 153, 1);
 }
+/* ─── Magic 8 Ball Hint ──────────────────────────────────── */
 
+#magic8ball-hint {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.5;
+    pointer-events: none;
+    z-index: 10003;
+}
 /* ─── Artist Signature ───────────────────────────────────── */
 
 .artist-signature {
