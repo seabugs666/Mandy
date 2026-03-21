@@ -669,8 +669,9 @@ body.section-active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin: 2rem auto 0;  /* auto centers it */
     width: 100%;
+    max-width: 100%;
 }
 
 .video-wrapper {
@@ -828,8 +829,10 @@ body.section-active {
     .video-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
+        width: 90%;        /* add this */
+        margin: 1rem auto; /* add this */
     }
-}
+
 
 /* Tablet: 2 columns (optional middle breakpoint) */
 @media (min-width: 769px) and (max-width: 1024px) {
