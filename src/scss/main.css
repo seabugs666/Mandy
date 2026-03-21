@@ -352,6 +352,22 @@ body.splash-complete .artist-signature {
     line-height: 1.4;
 }
 
+}
+        .social-icons {
+            text-align: center;
+            margin: 10px 0; /* Adjusted margin */
+        }
+        .social-icons a {
+            color: white;
+            font-size: 30px;
+            margin: 0 10px;
+            text-decoration: none;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffcc00;
+
 #section-star {
     background: #fff;
     color: #000;
