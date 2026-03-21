@@ -358,7 +358,7 @@ body.splash-complete .artist-signature {
             margin: 10px 0; /* Adjusted margin */
         }
         .social-icons a {
-            color: white;
+            color: black;
             font-size: 30px;
             margin: 0 10px;
             text-decoration: none;
