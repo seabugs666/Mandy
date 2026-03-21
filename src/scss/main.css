@@ -659,15 +659,30 @@ body.splash-complete .artist-signature {
 #magic8ball-hint {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
+    left: 0;
+    right: 0;
     text-align: center;
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.75rem;
     line-height: 1.5;
     pointer-events: none;
     z-index: 10003;
+    padding: 0 16px;
+    letter-spacing: 0.08em;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    background: linear-gradient(90deg, #a78bfa, #f0abfc, #fff, #f0abfc, #a78bfa);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+    text-shadow: none;
+    filter: drop-shadow(0 0 6px rgba(167, 139, 250, 0.6));
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
 }
 /* ─── Artist Signature ───────────────────────────────────── */
 
