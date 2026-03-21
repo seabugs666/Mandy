@@ -86,6 +86,8 @@ body.splash-complete .artist-signature {
     display: block;
 }
 
+/* ─── Content Sections ─────────────────────────────────── */
+
 .content-section {
     position: fixed;
     top: 0;
@@ -188,6 +190,8 @@ body.splash-complete .artist-signature {
     list-style: none;
 }
 
+/* ─── Section: Cylinder (Shows) ────────────────────────── */
+
 #section-cylinder {
     background: #fff;
     color: #000;
@@ -230,8 +234,10 @@ body.splash-complete .artist-signature {
     font-weight: 500;
 }
 
+/* ─── Section: Mirror (Videos) ──────────────────────────── */
+
 #section-mirror {
-   background: #fff;
+    background: #fff;
     color: #000;
 }
 
@@ -290,6 +296,8 @@ body.splash-complete .artist-signature {
     padding-bottom: 0.3rem;
     line-height: 1.4;
 }
+
+/* ─── Section: Circle (Contact) ─────────────────────────── */
 
 #section-circle {
     background: #fff;
@@ -352,21 +360,28 @@ body.splash-complete .artist-signature {
     line-height: 1.4;
 }
 
+/* ─── Social Icons ───────────────────────────────────────── */
 
-        .social-icons {
-            text-align: center;
-            margin: 10px 0; /* Adjusted margin */
-        }
-        .social-icons a {
-            color: black;
-            font-size: 30px;
-            margin: 0 10px;
-            text-decoration: none;
-            display: inline-block;
-            transition: color 0.3s ease;
-        }
-        .social-icons a:hover {
-            color: #ffcc00;
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.social-icons a {
+    color: black;
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* ─── Section: Star ──────────────────────────────────────── */
 
 #section-star {
     background: #fff;
@@ -429,6 +444,8 @@ body.splash-complete .artist-signature {
     line-height: 1.4;
 }
 
+/* ─── Section: Curve (Nina Protocol) ────────────────────── */
+
 #section-curve {
     background: #fff;
     color: #000;
@@ -478,6 +495,8 @@ body.splash-complete .artist-signature {
     top: 0;
     left: 0;
 }
+
+/* ─── Section: Lipstick ──────────────────────────────────── */
 
 #section-lipstick {
     background: #fff;
@@ -539,6 +558,8 @@ body.splash-complete .artist-signature {
     padding-bottom: 0.3rem;
     line-height: 1.4;
 }
+
+/* ─── Magic 8 Ball ───────────────────────────────────────── */
 
 #magic8ball-container {
     position: fixed;
@@ -634,6 +655,8 @@ body.splash-complete .artist-signature {
     background: rgba(44, 46, 153, 1);
 }
 
+/* ─── Artist Signature ───────────────────────────────────── */
+
 .artist-signature {
     position: fixed;
     bottom: 20px;
@@ -664,19 +687,20 @@ body.section-active {
     height: 100%;
 }
 
-/* YouTube Video Grid Styles */
+/* ─── YouTube Video Grid ─────────────────────────────────── */
+
 .video-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin: 2rem auto 0;  /* auto centers it */
+    margin: 2rem auto 0;
     width: 100%;
     max-width: 100%;
 }
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     background: #000;
@@ -692,6 +716,7 @@ body.section-active {
     border: none;
 }
 
+/* ─── Responsive ─────────────────────────────────────────── */
 
 @media (max-width: 1024px) {
     .content-section .section-content {
@@ -722,6 +747,10 @@ body.section-active {
 
     #section-curve iframe {
         height: 100vh;
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -798,6 +827,13 @@ body.section-active {
         top: 25px;
         right: 25px;
     }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 90%;
+        margin: 1rem auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -821,22 +857,5 @@ body.section-active {
 
     #section-curve iframe {
         height: 100vh;
-    }
-}
-
-/* Mobile: 1 column */
-@media (max-width: 768px) {
-    .video-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        width: 90%;        /* add this */
-        margin: 1rem auto; /* add this */
-    }
-
-
-/* Tablet: 2 columns (optional middle breakpoint) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .video-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
